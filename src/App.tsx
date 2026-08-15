@@ -1,9 +1,9 @@
+import BonsaiCanvas from "./components/BonsaiCanvas";
+
 function App() {
   return (
     <div className="app">
-      <div className="bonsai">
-        🌱
-      </div>
+      <BonsaiCanvas />
 
       <h1>Desk Bonsai</h1>
 
