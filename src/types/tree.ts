@@ -1,8 +1,13 @@
 export interface TreeBranch {
   startX: number;
   startY: number;
+
+  controlX: number;
+  controlY: number;
+
   endX: number;
   endY: number;
+
   width: number;
   depth: number;
 }

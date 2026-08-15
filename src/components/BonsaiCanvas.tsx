@@ -49,8 +49,16 @@ function BonsaiCanvas({ stage }: BonsaiCanvasProps) {
 
       ctx.beginPath();
 
+      ctx.beginPath();
+
       ctx.moveTo(branch.startX, branch.startY);
-      ctx.lineTo(branch.endX, branch.endY);
+
+      ctx.quadraticCurveTo(
+        branch.controlX,
+        branch.controlY,
+        branch.endX,
+        branch.endY,
+      );
 
       ctx.stroke();
     });
