@@ -41,7 +41,7 @@ function createBranch(
   }
 
   const nextLength = length * 0.65;
-  const nextWidth = width * 0.65;
+  const nextWidth = Math.max(width * 0.58, 1.5);
 
   createBranch(
     endX,
@@ -70,9 +70,9 @@ export function generateTree(): TreeData {
   createBranch(
     175,
     320,
-    140,
+    155,
     -Math.PI / 2,
-    14,
+    22,
     0,
     branches,
   );
