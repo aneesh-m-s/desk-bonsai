@@ -21,7 +21,7 @@ function App() {
 
   return (
     <div className="app">
-      <BonsaiCanvas />
+      <BonsaiCanvas stage={plant.stage} />
 
       <h1>Desk Bonsai</h1>
 
